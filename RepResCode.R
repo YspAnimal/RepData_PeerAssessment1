@@ -12,18 +12,19 @@ DataActivity <- read.csv("activity.csv")
 
 #What is mean total number of steps taken per day?
 
-hist(DataActivity$steps, xlab = "Steps per day", ylim = c(0, 2000))
+hist(DataActivity$steps, xlab = "Steps per day", ylim = c(0, 1000), breaks = 50)
 summary(DataActivity$steps, na.rm = T)
 
 #mean(DataActivity$steps, na.rm = T)
 #median(DataActivity$steps, na.rm = T)
 
 library(ggplot2)
+library(dplyr)
+
+
 qplot(interval, steps, data = DataActivity)
 
 plot(DataActivity$interval, DataActivity$steps, type = "l")
-
-
 
 
 CleanDataSet <- DataActivity[complete.cases(DataActivity), ]
