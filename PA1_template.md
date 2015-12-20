@@ -58,7 +58,7 @@ ggplot(DataActivityDAY, aes(steps)) +
   geom_vline(aes(xintercept = mean(steps), color="#80cdc1"))
 ```
 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4-1.png) 
+![plot of chunk unnamed-chunk-4](figure/Fig1.png) 
 
 ###3. Calculate and report the median and mean total number of steps taken per day
 
@@ -96,7 +96,7 @@ ggplot(DataActivityAVG, aes(interval, AvgSteps)) +
   geom_hline(aes(yintercept = max(AvgSteps), color="#dfc27d"))
 ```
 
-![plot of chunk unnamed-chunk-7](figure/unnamed-chunk-7-1.png) 
+![plot of chunk unnamed-chunk-7](figure/Fig2.png)  
 
 ###2.Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?  
 
@@ -145,7 +145,7 @@ ggplot(DataActivityNew, aes(steps)) +
   geom_vline(aes(xintercept = mean(steps), color="#80cdc1"))
 ```
 
-![plot of chunk unnamed-chunk-12](figure/unnamed-chunk-12-1.png) 
+![plot of chunk unnamed-chunk-12](figure/Fig3.png) 
 
 
 ```r
@@ -195,4 +195,4 @@ xyplot(steps ~ interval | date, DataActivityW, type = "l", layout = c(1, 2),
        xlab = "Interval", ylab = "Number of steps")
 ```
 
-![plot of chunk unnamed-chunk-16](figure/unnamed-chunk-16-1.png) 
+![plot of chunk unnamed-chunk-16](figure/Fig4.png) 
