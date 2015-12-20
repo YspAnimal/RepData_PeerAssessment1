@@ -1,6 +1,3 @@
----
-output: html_document
----
 #Reproducible Research: Peer Assessment 1
 
 ###For data processing we will use next parameters and libraries
